@@ -1,0 +1,118 @@
+% Author: Niels Meyering
+% University of Osnabrück
+%
+\RequirePackage{atbegshi}
+
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german,ngerman]{babel}
+\usepackage{grffile}
+\usepackage{rotating}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{parskip}
+
+\usepackage{url}
+
+\usepackage{graphicx}
+%\makeatletter\let\l@addto@macro\relax\makeatother
+% Textspiegel
+\usepackage{typearea}
+\areaset[0.75cm]{16cm}{21cm}
+\addtolength{\topmargin}{1cm}
+\RequirePackage[bf,small,margin=1.0cm]{caption}
+
+%\makeatletter\let\l@addto@macro=\relax\makeatother
+%\usepackage[skip=0cm,list=true,labelfont=it]{subcaption}
+\usepackage{subcaption}
+
+\newtheorem{definition}{Definition}
+
+\usepackage{hyperref}
+%\usepackage{biblatex}
+\bibliographystyle{alpha}
+%\usepackage{tikz}
+%\PreviewEnvironment{tikzpicture}
+%\setlength\PreviewBorder{5pt}%
+
+\begin{document}
+
+\title{Solar CSP}
+\author{Niels Meyering\\ Energiesystemanalyse, SS 2013\\ Institut Umweltsystemforschung, Universität Osnabrück}
+\date{August 2013}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Universität Osnabrück}\\[1.5cm] % Name of your university/college
+\textsc{\Large Energiesystemanalyse SS 2013}\\[0.5cm] % Major heading such as course name
+\textsc{\large }\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Solar CSP }\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.3\textwidth}
+\begin{flushleft} \large
+\emph{eingereicht von:}\\
+Sascha Kolodzey\\
+Niels Meyering
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.6\textwidth}
+\begin{flushright} \large
+\emph{Dozent:} \\
+Dr. Peter Viebahn\\
+\end{flushright}
+\end{minipage}\\[4cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{eingereicht von:}\\
+%Sascha Kolodzey,\\
+%Niels Meyering\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large August 2013}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+\includegraphics[height=2cm]{unilogo.png}
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Einleitung}
+
+\newpage
+\bibliography{quellen}
+
+\end{document}
